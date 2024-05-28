@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau Dashboard</title>
+    <style>
+        /* Estilo para a página e para esconder a div */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1b1b1b;
+        }
+    </style>
+</head>
+
+<body>
+    <script type='module'
+        src='https://prod-useast-b.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
+    <tableau-viz id='tableau-viz'
+        src='https://prod-useast-b.online.tableau.com/t/gabre01102001855e690359/views/GestodeCrises/Painel' width='1366'
+        height='1608' hide-tabs toolbar='hidden'></tableau-viz>
+
+    <script type='module'
+        src='https://prod-useast-b.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
+    <tableau-viz id='tableau-viz'
+        src='https://prod-useast-b.online.tableau.com/t/gabre01102001855e690359/views/Tempodeumacrise/Duraaodecrises'
+        width='1366' height='1108' hide-tabs toolbar='hidden'></tableau-viz>
+
+    <script type='module'
+        src='https://prod-useast-b.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js'></script>
+    <tableau-viz id='tableau-viz'
+        src='https://prod-useast-b.online.tableau.com/t/gabre01102001855e690359/views/Grafico_bolha/PainelWOW'
+        width='1366' height='808' hide-tabs toolbar='hidden'></tableau-viz>
+</body>
+
+</html>
